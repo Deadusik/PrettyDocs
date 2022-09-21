@@ -1,0 +1,323 @@
+body {
+  background-color: #F9F9FB;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  background-color: #494D58;
+}
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__line {
+  width: 100%;
+  height: 3px;
+  background-color: #4DB5B6;
+  border: none;
+}
+.header__title {
+  margin-top: 40px;
+  color: #4DB5B6;
+  font-size: 22px;
+}
+.header__title::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -25px;
+  background-image: url("/imgs/header/google-docs.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+.header__title-span {
+  color: white;
+  font-weight: bold;
+}
+.header__text {
+  text-align: center;
+  color: #E8EEF2;
+}
+.header__text:nth-child(2) {
+  margin-top: 15px;
+}
+.header__text:nth-child(3) {
+  margin-top: 10px;
+}
+.header__text-span {
+  color: #DF5392;
+}
+.header__social-media {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.header__twitter-btn {
+  background-color: #1B97E1;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px 2px 16px;
+  border-radius: 3px;
+}
+.header__twitter-btn:hover {
+  opacity: 0.8;
+}
+.header__twitter-btn::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: -12px;
+  margin-top: 1px;
+  background-image: url("/imgs/header/twitter.png");
+  background-size: 10px 10px;
+}
+.header__facebook-btn {
+  background-color: #3D69B0;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px 2px 16px;
+  border-radius: 3px;
+}
+.header__facebook-btn:hover {
+  opacity: 0.8;
+}
+.header__facebook-btn::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: -12px;
+  margin-top: 0px;
+  background-image: url("/imgs/header/thumb-up.png");
+  background-size: 10px 10px;
+}
+
+.content__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content__header {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content__header-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #44454B;
+}
+.content__header-text {
+  line-height: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #6B6B6D;
+}
+.content__header-btn {
+  margin-top: 20px;
+  padding: 10px 10px 10px 30px;
+  color: white;
+  border-radius: 3px;
+  background-color: #43BABE;
+}
+.content__header-btn:hover {
+  opacity: 0.8;
+}
+.content__header-btn::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: -20px;
+  margin-top: 0px;
+  background-size: 16px 16px;
+  background-image: url("/imgs/content_header/cloud-download.png");
+}
+.content__cards {
+  margin-top: 40px;
+}
+.content__cards-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
+.content__cards-row:last-child {
+  margin-top: 30px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  background-color: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 1px rgb(235, 235, 235);
+          box-shadow: 1px 1px 1px rgb(235, 235, 235);
+}
+.card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 20px;
+}
+.card__icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: 0px;
+}
+.card__title {
+  margin-top: 20px;
+  color: #44454B;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card__text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #6B6B6D;
+}
+.card__top-line {
+  width: 100%;
+  border: none;
+  height: 2px;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+.card__top-line--green {
+  background-color: #3FCA5E;
+}
+.card__top-line--pink {
+  background-color: #D27EB4;
+}
+.card__top-line--blue {
+  background-color: #65AFFF;
+}
+.card__top-line--violet {
+  background-color: #5D00CA;
+}
+.card__top-line--light-green {
+  background-color: #00B4D4;
+}
+.card__top-line--orange {
+  background-color: #DEA001;
+}
+.card:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  background-color: #28292B;
+  padding: 20px;
+}
+.footer__text {
+  text-align: center;
+  color: white;
+}
+.footer__span {
+  color: #DF5392;
+}
+.footer__link {
+  color: #6B9094;
+}
+.footer__link:hover {
+  color: tomato;
+}
+
+@media (max-width: 1200px) {
+  .content__cards-row {
+    width: 90%;
+  }
+  .content__header-text {
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 800px) {
+  .content__cards-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content__cards-row:last-child {
+    margin-top: 0px;
+  }
+  .content__card {
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+}
